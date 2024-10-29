@@ -18,7 +18,7 @@ function App() {
     setChannelData(null);
 
     try {
-      const response = await axios.get(`http://localhost:5000/api/channel-data?channelId=${channelId}`);
+      const response = await axios.get(`https://new-youtube-channel-analysis.onrender.com/api/channel-data?channelId=${channelId}`);
       setChannelData(response.data);
     } catch (err) {
       console.error('Error fetching channel data:', err);
